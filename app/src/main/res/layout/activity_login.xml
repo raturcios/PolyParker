@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/parkinglogo"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <EditText
+            android:id="@+id/broncoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:hint="BroncoName"/>
+
+        <EditText
+            android:id="@+id/broncoPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="BroncoPassword"
+            android:paddingTop="20dp"
+            android:layout_below="@+id/broncoName"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/broncoPass"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:background="#19C422" />
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>
